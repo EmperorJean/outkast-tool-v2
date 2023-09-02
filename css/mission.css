@@ -1,0 +1,42 @@
+#mission-zone {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 250px;
+    margin: 20px auto;
+}
+
+.mission-outkasts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.total-power {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#dispatch-mission-icon {
+    position: relative;
+    cursor: pointer;
+    background-color: var(--nord-secondary);
+    padding: .1rem 1rem;
+    border-radius: 5px;
+}
+
+#dispatch-mission-icon:hover {
+    background-color: #555;
+}
+
+.mission-badge {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Content</title>
+</head>
+
+<body>
+    <div id="ext-menu">
+        <div class="ext-menu-header">
+            <div class="ext-menu-header-title">Squad Creator</div>
+            <div class="ext-menu-header-content">
+                <div class="ext-menu-header-content-currentoutkasts">
+                    <div class="ext-menu-header-content-currentoutkasts-items">
+                        <div class="ext-menu-header-content-currentoutkasts-item">
+                            <img id="queue-image-1" src="https://mnnt.io/collections/outkasts/med_res/1">
+                        </div>
+                        <div class="ext-menu-header-content-currentoutkasts-item">
+                            <img id="queue-image-2" src="https://mnnt.io/collections/outkasts/med_res/1">
+                        </div>
+                        <div class="ext-menu-header-content-currentoutkasts-item">
+                            <img id="queue-image-3" src="https://mnnt.io/collections/outkasts/med_res/1">
+                        </div>
+                        <div class="ext-menu-header-content-currentoutkasts-item">
+                            <img id="queue-image-4" src="https://mnnt.io/collections/outkasts/med_res/1">
+                        </div>
+                    </div>
+                    <div class="ext-menu-header-content-groupcontrol">
+                        <input id="ext-menu-header-content-groupcontrol-groupname" placeholder="Group" />
+                        <div id="ext-menu-header-content-groupcontrol-groupbuttons">
+                            <button id="ext-menu-header-content-groupcontrol-creategroup"> Create </button>
+                            <button id="ext-menu-header-content-groupcontrol-resetgroup"> Clear </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ext-menu-header-content-groupimportexport">
+                    <div class="ext-menu-header-content-groupimportexport-import">
+                        <div class="ext-menu-header-content-groupimportexport-header">
+                            <h3 class="ext-menu-header-content-groupimportexport-title">Import Group</h3>
+                        </div>
+                        <div class="ext-menu-header-content-groupimportexport-body">
+                            <div class="ext-menu-header-content-groupimportexport-body">
+                                <div class="p">Click the upload button below to load group from json file </div>
+                                <input type="file" id="groupImport" name="groupImport" accept=".json">
+                            </div>
+
+                        </div>
+                        <div class="ext-menu-header-content-groupimportexport-footer">
+                            <button class="ext-menu-header-content-groupimportexport-importuploadbutton"
+                                id="loadJson">Upload</button>
+                        </div>
+                    </div>
+                    <div class="ext-menu-header-content-groupimportexport-export">
+                        <div class="ext-menu-header-content-groupimportexport-header">
+                            <h3 class="ext-menu-header-content-groupimportexport-title">Export Group</h3>
+                        </div>
+                        <div class="ext-menu-header-content-groupimportexport-body">
+                            <div class="p">Editing this file may lead to problems with importing later</div>
+                        </div>
+                        <div class="ext-menu-header-content-groupimportexport-footer">
+                            <button class="ext-menu-header-content-groupimportexport-importuploadbutton"
+                                id="exportJson">Export
+                                Groups</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ext-menu-main">
+            <!-- Squadless Section -->
+            <div class="ext-menu-main-squadless">
+                <div class="ext-menu-main-title">Squad Less <span id="squadless-count" style="float: right;"></span></div>
+                <div class="ext-menu-main-content" id="squadless-item-container">
+                </div>
+            </div>
+
+            <!-- Squadfull Section -->
+            <div class="ext-menu-main-squadfull">
+                <div class="ext-menu-main-title">Squad Full</div>
+                <div class="ext-menu-main-content" id="squad-container">
+                    <!-- Squad ends here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="ext-menu-footer">
+            <p>*Total power doesn't take boosted parts into account so deployed power may be higher <br> Any issues
+                message @jeangg on discord</p>
+        </div>
+    </div>
+    <div id="mission-zone">
+        <div class="mission-outkasts">
+            <!-- Stacked Outkast members will appear here -->
+        </div>
+        <div class="total-power">
+            Looking for the outkast group tool? : <span id="total-power-value">Scroll to the top and click on the
+                gear</span>
+        </div>
+    </div>
+
+    <button onclick="dispatch()"></button>
+</body>
+
+</html>

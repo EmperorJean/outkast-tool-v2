@@ -1,0 +1,159 @@
+.ext-menu-main {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    color: var(--nord-text);
+}
+
+/* Squadless Section */
+.ext-menu-main-squadless {
+    flex: .8;
+}
+
+/* Squadfull Section */
+.ext-menu-main-squadfull {
+    flex: 1.2;
+}
+
+.ext-menu-main-squadless, .ext-menu-main-squadfull {
+    background-color: var(--nord-container);
+    color: var(--nord-text) ;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 35rem;
+    overflow: scroll;
+}
+
+.ext-menu-main-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--nord-primary);
+}
+
+.ext-menu-main-content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nord-background-darker);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ext-menu-main-content-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ext-menu-main-content-item-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.ext-menu-main-content-item-add {
+    background-color: var(--nord-primary);
+    color: var(--nord-text);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ext-menu-main-content-item:hover {
+    background-color: var(--nord-secondary);
+}
+
+.ext-menu-main-content-item-add:hover {
+    border: solid 1px var(--nord-container);
+}
+
+/* Squadfull Section */
+.ext-menu-main-content-squad {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--nord-background);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ext-menu-main-content-squad-name {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.ext-menu-main-content-squad-members {
+    display: flex;
+    gap: 10px;
+}
+
+.ext-menu-main-content-squad-member {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+}
+
+.ext-menu-main-content-squad-member img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.squad-move-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center; /* This will vertically center the arrows with respect to the squad content */
+    padding-right: 10px;
+}
+
+.squad-move-up, .squad-move-down {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.squad-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.trash-squad {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--nord-highlight); /* Using the red highlight color from the Nord theme for the trash icon */
+    font-size: 18px;
+    padding-right: -15px; /* space between the squad name and the trash icon */
+    transition: color 0.3s ease;
+    float: right;
+}
+
+.trash-squad:hover {
+    color: var(--nord-secondary);
+}
+
+.squad-member-delete {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}

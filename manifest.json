@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Outkast Missions+",
+    "version": "1.0.3",
+    "description": "Easily create, manage, and deploy squads of Outkasts on missions with a single click. Save time and optimize your gameplay.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://outkast.world/mission/*?id=*", "https://outkast-world.vercel.app/mission/*?id=*"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["main.css", "/css/header.css", "/css/body.css", "/css/mission.css", "index.html", "main.js"],
+        "matches": ["https://outkast.world/*",  "https://outkast-world.vercel.app/*"]
+      }
+    ],
+    "icons": {
+      "16": "assets/images/icon-128-2.png",
+      "48": "assets/images/icon-128-2.png",
+      "128": "assets/images/icon-128-2.png"
+    }
+  }
+  
